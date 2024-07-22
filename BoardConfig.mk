@@ -181,6 +181,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_M4DEFS += \
     persist_camera_prop=vendor_persist_camera_prop
+# To ignore SELinux Neverallow errors
+# SELINUX_IGNORE_NEVERALLOWS := true
 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
