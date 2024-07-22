@@ -36,4 +36,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # To enable or disable a specific feature or functionality related to EPPE (Exact Page Protection Extensions) during the build process.
+# Currently commented the offending entries in device.mk if not enable below flag
 # TARGET_DISABLE_EPPE := true
