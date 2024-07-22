@@ -34,3 +34,6 @@ BUILD_FINGERPRINT := realme/RMX1851/RMX1851:11/RKQ1.201217.002/1623376276806:use
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# To enable or disable a specific feature or functionality related to EPPE (Exact Page Protection Extensions) during the build process.
+TARGET_DISABLE_EPPE := true
