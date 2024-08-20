@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libaudioparsers \
+#    libaudioparsers \
     libcirrusspkrprot \
     libspkrprot \
     libhdmiedid \
@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
     libhfp \
     libbatterylistener \
     libsndmonitor \
-    libhdmipassthru \
+#    libhdmipassthru \
     tinymix
 
 PRODUCT_COPY_FILES += \
@@ -167,8 +167,9 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RMX1851 \
-    vendor.oppo.hardware.biometrics.fingerprint@2.1
+    android.hardware.biometrics.fingerprint@2.1-service.RMX1851 
+#\
+#    vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -249,7 +250,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
+#    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     libstagefright_omx.vendor \
     libminijail \
