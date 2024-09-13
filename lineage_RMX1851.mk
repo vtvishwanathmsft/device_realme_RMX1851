@@ -4,10 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff
+# Inherit some common risingOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_NOT_USES_BLUR := true
-
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1851 device
@@ -34,3 +36,6 @@ BUILD_FINGERPRINT := realme/RMX1851/RMX1851:11/RKQ1.201217.002/1623376276806:use
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# Sign builds
+PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey

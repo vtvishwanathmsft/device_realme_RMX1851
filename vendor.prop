@@ -142,7 +142,7 @@ ro.apk_verity.mode=2
 debug.egl.hw=0
 debug.sf.hw=0
 debug.mdpcomp.logs=0
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=false
@@ -167,6 +167,10 @@ persist.vendor.radio.mt_sms_ack=30
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Media
+vendor.media.target.version=1
+vendor.sys.media.target.version=1
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477-1
 
@@ -180,7 +184,7 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.vendor.radio.enableadvancedscan=false
 
 # SoC
-ro.soc.manufacturer=QTI
+ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM710
 
 # Surfaceflinger properties
@@ -205,14 +209,17 @@ persist.sys.binary_xml=false
 
 # USB
 vendor.usb.product_string=Realme 3 Pro
+ro.usb.uvc.enabled=true
+sys.usb.mtp.batchcancel=1
+vendor.usb.controller=a600000.dwc3
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss
 vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
-vendor.usb.use_ffs_mtp=0
-vendor.usb.use_gadget_hal=0
+vendor.usb.use_ffs_mtp=1
+vendor.usb.use_gadget_hal=1
 
 # Zygote
 zygote.critical_window.minute=10

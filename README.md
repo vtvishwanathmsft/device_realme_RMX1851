@@ -1,4 +1,4 @@
-Copyright (C) 2019 The LineageOS Project
+Copyright (C) 2024 The RisingOS Project
 
 Device configuration for realme 3 Pro/X Lite
 =========================================
